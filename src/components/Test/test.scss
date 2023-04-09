@@ -1,0 +1,114 @@
+.Test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F84646;
+    width: 100%;
+    margin-top: 20px;
+    padding: 75px 0;
+    a{
+        color: #FFFFFF;
+    }
+    a:nth-child(1){
+        text-align: center;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 64px;
+    }
+    a:nth-child(2){
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        padding-top: 8px;
+    }
+    .test__minTitle{
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        align-items: center;
+        flex-direction: row;
+        a{
+            text-align: start;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 31px; 
+            font-style: normal;
+            padding: 0 45px;
+            max-width: 100%;
+        }
+        a:first-child{
+            padding-left: 63px;
+        }
+        a:last-child{
+            padding-right: 63px;
+        }
+    }
+}
+@media screen and (max-width:75em){
+    .Test{
+        margin-top: 15px;
+        // margin: 20px 60px 0 60px;
+        padding: 82px 0;
+        .test__minTitle{
+            padding-left: 60px;
+            padding-right: 60px;
+            a{
+                padding: 0 28px;
+                font-size: 14px;
+            }
+            a:first-child{
+                padding-left: 0;
+            }
+            a:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+@media (min-width:1em)and (max-width:46.25em){
+    .Test{
+        padding-top: 50px;
+        padding-bottom: 60px;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        a:nth-child(1){
+            width: auto;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 47px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        a:nth-child(2){
+            padding-top: 9px;
+            font-size: 14px;
+        }
+        .test__minTitle{
+            padding: 67px 20px 0 20px;
+            display: flex;
+            flex-direction: column;
+            a{
+                line-height: 25px;
+                font-size: 18px;
+                font-weight: 700;
+                width: 183px;
+                padding: 0;
+                text-align: center;
+                padding: 40px 0;
+            }
+            a:first-child{
+                padding-left: 0px;
+                padding-top: 0;
+            }
+            a:last-child{
+                padding-right: 0px;
+                padding-bottom: 0;
+            }
+            img{
+                rotate: 90deg;
+            }
+    }
+    }
+}

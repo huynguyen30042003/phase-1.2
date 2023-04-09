@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+  }
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  font-family: 'Manrope';
+  font-size: normal;
+}
+.Main{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

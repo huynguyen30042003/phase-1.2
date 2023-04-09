@@ -1,0 +1,178 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F84646;
+    width: 100%;
+    padding-top: 80px;
+    .Footer__Title{
+        width: 1200px;
+        display: flex;
+        // justify-content: space-between;
+        align-items: start;
+        flex-direction: row;
+
+        .Footer__Title__SolutionServices,
+        .Footer__Products,
+        .Footer__Institutional,
+        .Footer__Communication{
+            display: flex;
+            max-width: 100%;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            padding-right: 100px;
+            font-size: 16px;
+            color: #fff;
+        }
+        .Footer__Communication{
+        }
+        .Footer__Title__SolutionServices{
+        }
+        // .Footer__Title__SolutionServices:nth-child(1),
+        // .Footer__Products:nth-child(1),
+        // .Footer__Institutional:nth-child(1),
+        // .Footer__Communication:nth-child(1){
+        //     font-weight: 700;
+        // }
+        a:nth-child(1){
+            line-height: 24px;
+            color: #fff;
+            font-weight: 700;
+            padding-top: 0;
+        }
+        a{
+            max-width: 100%;
+            line-height: 32px;
+            padding: 12px 0;
+            color: #E6E6E6;
+        }
+    }
+    .Footer__CopyRightContact{
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        margin-top: 38px;
+        margin-bottom: 70px;
+        .Footer__CopyRight{
+            a{
+                font-size: 16px;
+                color: #fff;
+                line-height: 32px;
+            }
+        }
+        .Footer__Contact{
+            img{
+                padding-left: 16px;
+            }
+            img:nth-child(1){
+                padding-left: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:75em){
+            .Footer{
+                .Footer__Title{
+                    .Footer__Title__SolutionServices,
+                    .Footer__Products,
+                    .Footer__Institutional,
+                    .Footer__Communication{
+                        padding-right: 0;
+                    }
+                }
+    
+            }
+            .Footer{
+                .Footer__Title{
+                    width: 100%;
+                    margin: 0 -60px;
+                    .Footer__Title__SolutionServices{
+                        padding-left: 60px;
+                    }
+                    .Footer__Communication{
+                        padding-right: 60px;
+                    }
+                    .Footer__Title__SolutionServices,
+                    .Footer__Products,
+                    .Footer__Institutional{
+                        padding-right: 50px;
+                    }
+                    .Footer__Communication{
+                        padding-right: 0;
+                    }
+    
+                }
+                .Footer__CopyRightContact{
+                    width: 100%;
+                    .Footer__CopyRight{
+                        padding-left: 60px;
+                    }
+                    .Footer__Contact{
+                        padding-right: 60px;
+                    }
+                }
+    
+            }
+    }
+    @media (min-width:40em)and (max-width:63.9375em){
+        .Footer{
+            .Footer__Title{
+                width: 100%;
+                margin: 0 -60px;
+                .Footer__Title__SolutionServices{
+                    padding-left: 60px;
+                }
+                .Footer__Communication{
+                    padding-right: 60px;
+                }
+            }
+            .Footer__CopyRightContact{
+                width: 100%;
+                .Footer__CopyRight{
+                    padding-left: 60px;
+                }
+                .Footer__Contact{
+                    padding-right: 60px;
+                }
+            }
+        }
+    }
+    @media (min-width:1em)and (max-width:46.25em){
+        .Footer{
+            .Footer__Title{
+                flex-direction: column;
+                width: 100%;
+                //   padding-left: 20px;
+                .Footer__Title__SolutionServices,
+                .Footer__Products,
+                .Footer__Institutional,
+                .Footer__Communication{
+                    padding-left: 20px;
+                }
+                .Footer__Communication{
+                    // padding-right: 60px;
+                }
+                a:last-child{
+                    padding-bottom: 49px;
+                }
+                .Footer__Communication{
+                    a:last-child{
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            .Footer__CopyRightContact{
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                margin: 0;
+                .Footer__CopyRight{
+                    padding: 65px 0 74px 20px;
+                }
+                .Footer__Contact{
+                    padding: 30px 0 0 20px;
+                }
+            }
+        }
+    }

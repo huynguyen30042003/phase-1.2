@@ -1,0 +1,159 @@
+.References{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F5F7;
+    padding: 60px 0;
+    a:nth-child(1){
+        
+        color: #18191F;
+        font-size: 48px;
+        line-height: 64px;
+        font-weight: 800;
+    }
+    a:nth-child(2){
+        color: #18191F;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 500;
+        margin: 5px 0 48px 0;
+    }
+    .References__banner{
+        display: flex;
+        .References__banner__col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10px;
+            .References__banner__col__img{
+                margin-top: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 170px;
+                height: 96px;
+                background-color: #FFFFFF;
+                border-radius: 16px;
+            }
+        }
+        .References__banner__col:first-child,
+        .References__banner__col:last-child{
+            width: 170px;
+        }
+        .References__banner__col:first-child{
+            padding-left: 0;
+        }
+        .References__banner__col:last-child{
+            padding-right: 0;
+        }
+        .References__banner__col:nth-child(3){
+            .References__banner__col__img:nth-child(1){
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:75em){
+    .References{
+        padding: 45px 0 85px 0;
+        a:nth-child(1){
+            color: #18191F;
+            font-size: 48px;
+            line-height: 64px;
+            font-weight: 800;
+        }
+        a:nth-child(2){
+            color: #18191F;
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 500;
+            margin: 5px 0 60px 0;
+        }
+        .References__banner{
+            display: flex;
+            .References__banner__col{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 6px;
+                .References__banner__col__img{
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 170px;
+                    height: 96px;
+                    background-color: #FFFFFF;
+                    border-radius: 16px;
+                }
+            }
+            .References__banner__col:first-child,
+            .References__banner__col:last-child{
+                width: 170px;
+            }
+            .References__banner__col:first-child{
+                padding-left: 0;
+            }
+            .References__banner__col:last-child{
+                padding-right: 0;
+            }
+            .References__banner__col:nth-child(3){
+                .References__banner__col__img:nth-child(1){
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 59em) {
+        .References{
+            .References__banner{
+            .References__banner__col:nth-child(2n){
+                display: none;
+            }
+            }
+        }
+
+    }
+@media (min-width:1em)and (max-width:46.25em){
+    .References{
+        a:first-child{
+            font-size: 36px;
+            font-weight: 700;
+        }
+        padding: 40px 0;
+        a:nth-child(2){
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 14px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 14px;
+        }
+        .References__banner{
+            flex-direction: column;  
+            .References__banner__col{
+                padding: 0 10px;
+            }
+            .References__banner__col:first-child {
+                padding-left: 10px;
+            }
+            .References__banner__col:nth-child(2) {
+                display: block;
+                .References__banner__col__img{
+                    margin-top: 24px !important;
+                }
+            }
+            .References__banner__col:nth-child(3){
+                .References__banner__col__img{
+                    margin-top: 24px !important;
+                }
+            }
+            .References__banner__col:last-child {
+                display: none;
+                padding-top: 24px;
+            }
+        }
+    }
+}

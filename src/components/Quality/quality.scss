@@ -1,0 +1,173 @@
+.Quality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 120px 0;
+    .Quality__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 93px;
+        
+        a:first-child{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 49px;
+        }
+        a:last-child{
+            padding-top: 30px;
+            max-width: 994px;
+            font-size: 24px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            letter-spacing: 0.2px;
+            line-height: 40px;
+            font-weight: 400;
+        }
+    }
+    .Quality__Frame{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .Quality__Frame__Content{
+            padding-top: 90px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 320px;
+            a{
+                margin-top: 10px;
+            }
+            a:nth-child(2){
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 33px;
+                text-align: center;
+                font-style: normal;
+            }
+            a:nth-child(3){
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: center;
+                font-style: normal;
+                padding: 0 11px;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+}
+@media screen and (max-width:75em){
+    .Quality{
+        margin: 120px 60px ;
+        .Quality__Frame{
+            justify-content: center;
+            padding-top: 90px;
+            .Quality__Frame__Content{
+                padding: 0 47px;
+            }
+            .Quality__Frame__Content:nth-child(n+3){
+                padding-top: 80px;
+            }
+            .Quality__Frame__Content:nth-child(1){
+                order: 1;
+            }
+            .Quality__Frame__Content:nth-child(2){
+                order: 2;
+            }
+            .Quality__Frame__Content:nth-child(3){
+                order: 5;
+            }
+            .Quality__Frame__Content:nth-child(4){
+                order: 3;
+            }
+            .Quality__Frame__Content:nth-child(5){
+                order: 4;
+            }
+            .Quality__Frame__Content:nth-child(6){
+                order: 6;
+            }
+        }
+    }
+}
+@media (min-width:40em)and (max-width:63.9375em){
+    .Quality{
+    .Quality__Frame{
+        padding-top: 0;
+        .Quality__Frame__Content:nth-child(2n){
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .Quality__Frame__Content:nth-child(2n+1){
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+}
+@media (min-width:1em)and (max-width:46.25em){
+    .Quality{
+        margin: 60px 20px 100px 20px;
+        .Quality__title{
+            a:first-child{
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 33px;
+                text-align: center;
+            }
+            a:nth-child(2){
+                padding-top: 15px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.2px;
+            }
+        }
+        .Quality__Frame{
+            padding-top: 0;
+            .Quality__Frame__Content:nth-child(2n){
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .Quality__Frame__Content:nth-child(2n+1){
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .Quality__Frame__Content:first-child{
+                padding-top: 40px;
+            }
+            .Quality__Frame__Content:nth-child(2){
+                padding-top: 80px;
+            }
+            .Quality__Frame__Content{
+                padding-top: 80px;
+                a:nth-child(3){
+                    line-height: 28px;
+                }
+            }
+            .Quality__Frame__Content:nth-child(1){
+                order: 1;
+            }
+            .Quality__Frame__Content:nth-child(2){
+                order: 2;
+            }
+            .Quality__Frame__Content:nth-child(3){
+                order: 6;
+            }
+            .Quality__Frame__Content:nth-child(4){
+                order: 4;
+            }
+            .Quality__Frame__Content:nth-child(5){
+                order: 3;
+            }
+            .Quality__Frame__Content:nth-child(6){
+                order: 5;
+            }
+        }
+        }
+}
+
