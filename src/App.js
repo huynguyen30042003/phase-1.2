@@ -1,6 +1,5 @@
 import Header from './components/Header/Header';
 import './App.scss';
-import NavBox from './components/NavBox/NavBox';
 import Quality from './components/Quality/Quality';
 import Test from './components/Test/Test';
 import Management from './components/Management/Management';
@@ -12,7 +11,7 @@ function App() {
   return (
     <>
       <div className='Main'>
-      <Header NavBox={NavBox}></Header>
+      <Header ></Header>
       <Quality></Quality>
       <Test></Test>
       <Management></Management>
