@@ -1,6 +1,18 @@
 .Management{
     max-width: 1200px;
     margin: 160px 0;
+    .Management__Process:last-child{
+        padding-top: 120px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .Management__Process__Title{
+            padding-right: 0;
+            padding-left: 142px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
     .Management__Process{
         max-width: 1200px;
         display: flex;
@@ -139,10 +151,10 @@
                 }
             }
         }
-        .Management__Test{
+        .Management__Process:last-child{
                 padding-left: 60px;
                 padding-right: 60px;                    
-            .Management__Test__Title{
+            .Management__Process__Title{
                 padding-left: 52px;
                 a:nth-child(1){
                     font-size: 58px;
@@ -152,7 +164,7 @@
                     width: auto;
                     font-size: 14px;
                 }
-                .Management__Test__Discover{
+                .Management__Process__Discover{
                     margin-top: 46px;
                     a{
                         font-weight: 600;
@@ -218,11 +230,11 @@
                 }
             }
         }
-        .Management__Test{
+        .Management__Process:last-child{
                 padding-top: 60px;
                 padding-left: 60px;
                 padding-right: 60px;                    
-            .Management__Test__Title{
+            .Management__Process__Title{
                 padding-left: 52px;
                 a:nth-child(1){
                     line-height: 42px;
@@ -231,7 +243,7 @@
                 a:nth-child(2){
                     font-size: 14px;
                 }
-                .Management__Test__Discover{
+                .Management__Process__Discover{
                     a{
                         font-weight: 600;
                         color: #FFFFFF;
@@ -304,12 +316,12 @@
             }
         }
     }
-    .Management__Test{
+    .Management__Process:last-child{
             padding-top: 55px;
             padding-left: 20px;
             padding-right: 20px;     
             flex-direction: column-reverse;               
-        .Management__Test__Title{
+        .Management__Process__Title{
             display: flex;
             align-items: center;
             padding-left: 0px;
@@ -324,7 +336,7 @@
                 font-size: 14px;
                 text-align: center;
             }
-            .Management__Test__Discover{
+            .Management__Process__Discover{
                 margin-top: 40px;
                 width: 100%;
                 a{

@@ -1,17 +1,36 @@
 import React from 'react'
 import List from '../../asset/img/List.svg'
 function navBox() {
+  const navBoxData = [
+    {
+      item:"Çözüm ve Hizmetler",
+    },
+    {
+      item:"Ürünler",
+    },
+    {
+      item:"Teknolojiler",
+    },
+    {
+      item:"İnsan Kaynakları",
+    },
+    {
+      item:"Kurumsal",
+    },
+    {
+      item:"İletişim",
+    },
+  ]
   return (
     <div className='nav__box'>
         <div className='nav'>
             <ul>
                 <img src={List}></img>
-                <li><a>Çözüm ve Hizmetler</a></li>
-                <li><a>Ürünler</a></li>
-                <li><a>Teknolojiler</a></li>
-                <li><a>İnsan Kaynakları</a></li>
-                <li><a>Kurumsal</a></li>
-                <li><a>İletişim</a></li>
+                {
+                  navBoxData.map((list)=>(
+                    <li><a>{list.item}</a></li>
+                  ))
+                }
             </ul>
         </div>
     </div>

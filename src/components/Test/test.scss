@@ -43,6 +43,9 @@
         a:last-child{
             padding-right: 63px;
         }
+        img:last-child{
+            display: none;
+        }
     }
 }
 @media screen and (max-width:75em){

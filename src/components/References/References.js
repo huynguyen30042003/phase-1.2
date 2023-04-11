@@ -11,45 +11,51 @@ import AmazonLogo from '../../asset/img/AmazonLogo.png'
 import references from './references.scss'
 
 function References() {
+  const LogoData =[
+    {
+      logo: [
+        AirbnbLogo
+      ],
+    },
+    {
+      logo: [
+        GoogleLogo,BookMyShowLogo
+      ],
+    },
+    {
+      logo: [
+        MicrosoftLogo,FedExLogo,WalmartLogo
+      ],
+    },
+    {
+      logo: [
+        OYOLogo,OLALogo
+      ],
+    },
+    {
+      logo: [
+        AmazonLogo
+      ],
+    },
+  ]
   return (
     <div className='References' data-aos="fade-up">
     <a>Referanslarımız</a>
     <a>Bize güvenen ve beraber çalıştığımız iş ortaklarımız</a>
     <div className='References__banner'>
-      <div className='References__banner__col'>
-        <img src={AirbnbLogo}></img>
-      </div>
-      <div className='References__banner__col'>
-        <div className='References__banner__col__img'>
-          <img src={GoogleLogo}></img>
-        </div>
-        <div className='References__banner__col__img'>
-          <img src={BookMyShowLogo}></img>
-        </div>
-      </div>
-      <div className='References__banner__col'>
-        <div className='References__banner__col__img'>
-          <img src={MicrosoftLogo}></img>
-        </div>
-        <div className='References__banner__col__img'>
-          <img src={FedExLogo}></img>
-        </div>
-        <div className='References__banner__col__img'>
-          <img src={WalmartLogo}></img>
-        </div>
-      </div>
-      <div className='References__banner__col'>
-      <div className='References__banner__col__img'>
-        <img src={OYOLogo}></img>
-      </div> 
-      <div className='References__banner__col__img'>
-        <img src={OLALogo}></img>
-      </div>
-      </div>
-      <div className='References__banner__col'>
-        <img src={AmazonLogo}></img>
-
-      </div>
+      {
+        LogoData.map((item)=>(
+          <div className='References__banner__col'>
+          {
+            item.logo.map((logo)=>(
+              <div className='References__banner__col__img'>
+              <img src={logo}></img>
+              </div>
+              ))
+            }
+          </div>
+        ))
+      }
     </div>
   </div>
   )
